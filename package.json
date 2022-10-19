@@ -1,11 +1,12 @@
 {
   "dependencies": {
-    "concurrently": "^7.4.0"
+    "concurrently": "^7.4.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-pwa-manifest": "^4.3.0"
   },
   "name": "19.0",
   "version": "1.0.0",
-  "main": "index.js",
-  "devDependencies": {},
+  "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start:dev": "concurrently \"cd server && npm run server\" \"cd client && npm run dev\"",
@@ -24,5 +25,8 @@
     "url": "https://github.com/KCarter134/Contact-Card/issues"
   },
   "homepage": "https://github.com/KCarter134/Contact-Card#readme",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "html-webpack-plugin": "^5.5.0"
+  }
 }
